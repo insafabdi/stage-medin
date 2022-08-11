@@ -1,0 +1,43 @@
+<div class="main" >
+    <div class="center">
+        <h1 >Demander un rendez-vous</h1>
+    </div>
+    
+    <form #p="ngForm" (ngSubmit)="add(p)">
+    
+    <p><input class="form-group" type="text" placeholder="Nom et prénom" required name="nom-prénom"  #nomprénom="ngModel" ngModel required  ></p>
+    
+    
+    <p><input class="form-group" type="text" placeholder="numéro de télèphone" required name="tel"  #tél="ngModel" ngModel required  ></p>
+
+    <p><input class="form-group" type="datetime" placeholder="Date de naissance" required name="Date de naissance" #nomprénom="ngModel" ngModel required  ></p>
+    
+
+    <p class="form" > Genre
+        <input  type="radio"  id="chk" value="homme"  name="genre" #homme="ngModel" ngModel required   >
+        <label>Homme</label>
+        <input   type="radio" id="chk" value="femme"  name="genre"    #femme="ngModel" ngModel required  >
+        <label>Femme</label>
+   </p>
+
+   <p class="form" > Première visite?
+        <input  type="radio"  id="chk" value="oui"  name="visite" #oui="ngModel" ngModel required   >
+        <label>Oui</label>
+        <input   type="radio" id="chk" value="non"   name="visite"   #non="ngModel" ngModel required  >
+        <label>Non</label>
+   </p>
+                    
+    
+      <p class="form" > Sélectionnez une date de rendez-vous</p>
+      <p><input class="form-group" type="datetime-local" placeholder="Date and time" id="name"  required name="date" value="2022-08-04T10:00"   #date="ngModel" ngModel required ></p>
+     
+    <p><input class="form-group" type="text" placeholder="Message \ plus d'informations" required name="Message"  #info="ngModel" ngModel required  ></p>
+    
+    <p><button class="form-group" type="submit">Enregistrer</button></p>
+    
+    
+    
+    </form>
+    
+    </div>
+    
