@@ -17,6 +17,10 @@ import { PrisedesrendezVousComponent } from './prisedesrendez-vous/prisedesrende
 import { ListedesrendezVousComponent} from './listedesrendez-vous/listedesrendez-vous.component';
 import { ListedesdocteursComponent } from './listedesdocteurs/listedesdocteurs.component';
 import { DialogExpComponent } from './dialog-exp/dialog-exp.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { DialogExpComponent } from './dialog-exp/dialog-exp.component';
     ListedesdocteursComponent ,
     DialogExpComponent,
     ListedesrendezVousComponent,
-    PrisedesrendezVousComponent
+    PrisedesrendezVousComponent,
+    HomeComponent,
+    ContactComponent,
+    FooterComponent,
+    HeaderComponent
 
   ],
   

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
 import { DialogExpComponent } from './dialog-exp/dialog-exp.component';
+import { HomeComponent } from './home/home.component';
 import { ListedesdocteursComponent } from './listedesdocteurs/listedesdocteurs.component';
 import { ListedesrendezVousComponent } from './listedesrendez-vous/listedesrendez-vous.component';
 import { LoginComponent } from './login/login.component';
@@ -13,7 +15,9 @@ const routes: Routes = [
   {path:'listedesdocteurs',component:ListedesdocteursComponent},
   {path:'prisedesrendez-vous',component:PrisedesrendezVousComponent},
   {path:'listedesrendez-vous',component:ListedesrendezVousComponent},
-  {path:'dialog-exp',component:DialogExpComponent}
+  {path:'dialog-exp',component:DialogExpComponent},
+  {path:'home',component:HomeComponent},
+  {path:'contact',component:ContactComponent}
 
 ];
 
