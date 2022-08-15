@@ -1,18 +1,113 @@
-<div class="main" >
-    <div class="center">
-        <h1>Register</h1>
-    </div>
 
-    <form #f="ngForm" (ngSubmit)="add(f)">
-      <input type="text" class="form-group" name= "First name " placeholder="first name" #firstname="ngModel" ngModel required >
-      <br>
-      <input type="text"class="form-group"  name= "Last name " placeholder="last name" #lastname="ngModel" ngModel required >
-      <br>
-      <input type="text"class="form-group" name= "Email " placeholder="Email" #Email="ngModel" ngModel required>
-      <br>
-      <input type="text"class="form-group" name= "Password " placeholder="password" #password="ngModel" ngModel required>
-      <br>
-      <input type="text"class="form-group" name= "Confirm password" placeholder="confirm password"  #confirm password="ngModel"ngModel required >
+<div class="main">
+ <div class="w3-center w3-padding-64" id="Register">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Register</span>
+  </div>
+<form class="w3-container" action="/action_page.php" target="_blank">
+  <div class="w3-section">
+    <label>Nom</label>
+    <br>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" type="text" name="Nom" required>
+  </div>
+  <div class="w3-section">
+    <label>Prénom</label>
+    <br>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" type="text" name="Prénom" required>
+  </div>
+  <div class="w3-section">
+    <label>Email</label>
+    <br>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" name="Email" required>
+  </div>
+  <div class="w3-section">
+    <label>Mot de passe</label>
+    <br>
+    <input matInput fromControlName="Mot de passe"class="w3-input w3-border w3-hover-border-black" style="width:80%;" [type]="showPassword?'password':'text'" name="Mot de passe" required>
+    <i class="fa fa-eye" matSuffix (click)="visibility()" >{{showPassword?'visibility_off':'visibility'}} </i>
+    
+  </div>
+  <div class="w3-section">
+    <label>Confirmer Mot de passe</label>
+    <br>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" type="password"
+     name="Confirmer mot de passe" required>
+  </div>
+  <select class="w3-input w3-border w3-hover-border-black" style="width:80%;" aria-label="Default select example">
+    <option selected>Catégorie</option>
+    <option value="medecin">Médecin</option>
+    <option value="patient">Patient</option>
+  </select>
+  <!-- <p *ngif="Catégorie === medecin"></p> -->
+  <input type="checkbox" id="chk" aria-hidden="true" name="b" #b="ngModel"ngModel required ><p class="p" >I agree to the website terms and conditions</p>
+  <button type="submit"  [disabled]="b.invalid" class="w3-button w3-block w3-black">Enregistrer</button>
+ 
+  
+  <!-- <div class="form-group">
+    <label for="type">Type</label>
+    <select class="form-control" id="type" required>
+      <option *ngFor="let chose of type" [value]="Médecin">Medecin</option>
+      <option *ngFor="let chose of type" [value]="Patient">Patient</option>
+    </select>
+  </div> -->
+    
+   </form>
+    
+    <p class="p">Already have an account?<a routerLink="/login"> login here</a></p>
+            
+</div>
+
+ -->
+
+
+    
+        <!-- <div class="form-group inner-addon right-addon">
+          <div class="input-group col-10  " style="left :-20px;width:79%;
+          height: 40px;" >
+            <input name="password"
+                [type]="showPasswordOnPress ? 'text' : 'password'"
+                class="form-control pwd-control input-text"
+                id="password-field" placeholder="Password">
+            <div
+            (mousedown)="showPasswordOnPress = !showPasswordOnPress" 
+            (mouseup)="showPasswordOnPress = !showPasswordOnPress">
+              <i alt="show" class="fas fa-eye-slash eye-hide"
+                 [class.hide]="showPasswordOnPress"></i>
+              <i alt="hide"  class="fas fa-eye eye-show"
+                 [class.hide]="!showPasswordOnPress"></i>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="form-group inner-addon right-addon">
+          <div class="input-group col-10" style="left :-20px;width:79%;
+          height: 40px; border-radius: 10px;"  >
+            <input name="password"
+                [type]="showPasswordOnPress ? 'text' : 'password'"
+                class="form-control pwd-control input-text" 
+                id="password-field" placeholder="confirmer Password">
+            <div
+            (mousedown)="showPasswordOnPress = !showPasswordOnPress" 
+            (mouseup)="showPasswordOnPress = showPasswordOnPress">
+              <i alt="show"  class="fas fa-eye-slash eye-hide"
+                 [class.hide]="showPasswordOnPress"></i>
+              <i alt="hide" class="fas fa-eye eye-show"
+                 [class.hide]="!showPasswordOnPress"></i>
+            </div>
+          </div>
+        </div>
+        <br>
+      <div class="form-check check-input">
+        <input class="form-check-input" type="checkbox" value="Médecin" id="Medecin">
+        <label class="form-check-label" for="flexCheckDefault">
+          Médecin
+        </label>
+      </div>
+      <div class="form-check check-input ">
+        <input class="form-check-input" type="checkbox" value="Patient" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Patient
+        </label>
+      </div>
       <br>
     
     
