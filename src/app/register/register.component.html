@@ -37,7 +37,7 @@
     <option value="medecin">Médecin</option>
     <option value="patient">Patient</option>
   </select>
-  <p *ngif="Catégorie === medecin"></p>
+ <!--  <p *ngif="Catégorie === medecin"></p> -->
   <input type="checkbox" id="chk" aria-hidden="true" name="b" #b="ngModel"ngModel required ><p class="p" >I agree to the website terms and conditions</p>
   <button type="submit"  [disabled]="b.invalid" class="w3-button w3-block w3-black">Enregistrer</button>
  
