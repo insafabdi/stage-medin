@@ -12,6 +12,8 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+console.log(1)
+
   }
   add(f:any ){
     let data=f.value
