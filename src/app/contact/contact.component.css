@@ -14,3 +14,6 @@
 	box-shadow: 5px 20px 50px #000;
     margin-top:-600px;
 }
+.w3-section:focus-within{
+	transform:scale(1.05,1.05);
+}
