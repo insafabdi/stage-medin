@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  visible:boolean=true;
-  changetype:boolean=true;
   constructor() { }
 
   ngOnInit(): void {
@@ -17,9 +15,6 @@ export class LoginComponent implements OnInit {
     let data=f.value
     console.log(data)
   }
-viewpass(){
-  this.visible=!this.visible;
-  this.changetype=!this.changetype;
-}
+
 
 }
