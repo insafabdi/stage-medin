@@ -18,7 +18,7 @@ body{
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
-input{
+.input-text{
 	width: 60%;
 	height: 40px;
 	background: #e0dede;
