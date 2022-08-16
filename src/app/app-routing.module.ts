@@ -8,7 +8,7 @@ import { ListedesrendezVousComponent } from './listedesrendez-vous/listedesrende
 import { LoginComponent } from './login/login.component';
 import { PrisedesrendezVousComponent } from './prisedesrendez-vous/prisedesrendez-vous.component';
 import { RegisterComponent } from './register/register.component';
-
+import {SpecialitesComponent} from './specialites/specialites.component'
 const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
@@ -17,7 +17,8 @@ const routes: Routes = [
   {path:'listedesrendez-vous',component:ListedesrendezVousComponent},
   {path:'dialog-exp',component:DialogExpComponent},
   {path:'home',component:HomeComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'specialites',component:SpecialitesComponent}
 
 ];
 
