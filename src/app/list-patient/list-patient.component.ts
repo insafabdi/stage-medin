@@ -24,7 +24,6 @@ genre:String;
       this.dateRend =  JSON.parse(this.listPatients).dateRendezVous;
       this.genre =  JSON.parse(this.listPatients).genre
      
-     
   }
 
 }
