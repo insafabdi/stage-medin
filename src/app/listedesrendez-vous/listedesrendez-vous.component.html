@@ -5,7 +5,15 @@
   <table class="table">
       <thead>
         <tr>
-          <th scope="col">Nom et prénom</th>
+          <th s<div class="modal-body">
+        Nom et prénom: <span>Nourhene BEN NACEUR<br></span>
+        Date de naissance: <span id ="date">01/06/1999</span><br>
+        Genre:<span id="genre">Femme</span><br>
+       Date de rendez-vous: <span id="rendez">16/08/2022</span><br>
+        Autres informations:<br>
+        
+
+      </div>cope="col">Nom et prénom</th>
           <th scope="col">E-mail</th>
           <th scope="col">action</th>
         </tr>
@@ -34,7 +42,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <!-- <div class="modal-body">
         Nom et prénom:<br>
         Date de naissance:<br>
         Genre:<br>
@@ -42,10 +50,20 @@
         Autres informations:
         test
 
+      </div> -->
+
+      <div class="modal-body">
+        Nom et prénom: <span>Nourhene BEN NACEUR<br></span>
+        Date de naissance: <span id ="date">01/06/1999</span><br>
+        Genre:<span id="genre">Femme</span><br>
+       Date de rendez-vous: <span id="rendez">16/08/2022</span><br>
+        Autres informations:<br>
+        
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" (click) ="addPatient()"data-dismiss="modal">Confirmer</button>
+        <button type="button" class="btn btn-primary">Supprimer</button>
       </div>
     </div>
   </div>
